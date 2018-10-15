@@ -24,7 +24,8 @@
         <activity android:name=".mctestActivity" />
         <activity android:name=".ActivityTutorial" />
         <activity android:name=".ActivitQuiz" />
-        <activity android:name=".ActivityVideo"></activity>
+        <activity android:name=".ActivityVideo" />
+        <activity android:name=".ActivityFLTest"></activity>
     </application>
 
 </manifest>
