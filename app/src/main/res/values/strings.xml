@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">EasyKT</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="quiz">Quiz</string>
+    <string name="video">Video</string>
+    <string name="tbc">TBC</string>
 </resources>

@@ -4,110 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
-    android:background="@mipmap/background"
     tools:context=".mctestActivity">
 
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
-    android:layout_weight="2">
-
-    <TextView
-        android:id="@+id/textGrid"
-        android:text="EasyKT"
-        android:textSize = "34sp"
-        android:textColor="@android:color/white"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-</RelativeLayout>
-
-    <GridLayout
-        android:columnCount="2"
-        android:rowCount="2"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false"
-        android:layout_weight="8"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:padding="14dp">
-
-<!--Row 1 !-->
-
-<!--Column 1 !-->
-<android.support.v7.widget.CardView
-    android:layout_width="0dp"
-    android:layout_height="0dp"
-    android:layout_columnWeight="1"
-    android:layout_rowWeight="1"
-    android:layout_marginBottom="16dp"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    app:cardElevation="8dp"
-    app:cardCornerRadius="8dp"
-    >
-    
-    <LinearLayout
-        android:layout_gravity="center_horizontal|center_vertical"
-        android:layout_margin="16dp"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:src="@mipmap/tutorial"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:layout_weight="1">
 
         <TextView
+            android:id="@+id/textGrid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Tutorial"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="34sp" />
 
+    </RelativeLayout>
 
-    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:padding="14dp"
+        android:rowCount="2">
 
-</android.support.v7.widget.CardView>
+        <!--Row 1 !-->
 
-        <!--Column 2 !-->
- <android.support.v7.widget.CardView
+        <!--Column 1 !-->
+        <android.support.v7.widget.CardView
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            android:layout_rowWeight="1"
             app:cardCornerRadius="8dp"
-            >
+            app:cardElevation="8dp">
 
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@mipmap/quiz"
-                    android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/tutorial" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Quiz"
+                    android:text="@string/tutorial"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--Column 2 !-->
+        <android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/quiz" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/quiz"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
@@ -125,20 +122,19 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            android:layout_rowWeight="1"
             app:cardCornerRadius="8dp"
-            >
+            app:cardElevation="8dp">
 
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -150,7 +146,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Video"
+                    android:text="@string/video"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
@@ -166,32 +162,31 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
+            android:layout_rowWeight="1"
             app:cardCornerRadius="8dp"
-            >
+            app:cardElevation="8dp">
 
             <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:src="@mipmap/icon"
-                    android:layout_gravity="center_horizontal"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/kt_icon" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="TBC"
+                    android:text="@string/tbc"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"
@@ -203,5 +198,20 @@
         </android.support.v7.widget.CardView>
 
     </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textGrid2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="34sp" />
+
+    </RelativeLayout>
 
 </LinearLayout>
