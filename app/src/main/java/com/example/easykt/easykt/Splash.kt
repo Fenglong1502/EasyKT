@@ -11,12 +11,12 @@ import com.example.easykt.easykt.R.layout.activity_main
 class Splash : AppCompatActivity() {
 
     private var mDelayHandler: Handler? = null
-    private val SPLASH_DELAY: Long = 3000 //3 seconds
+    private val SPLASH_DELAY: Long = 1000 //1 seconds
 
     internal val mRunnable: Runnable = Runnable {
         if (!isFinishing) {
 
-            val intent = Intent(applicationContext, activity_main::class.java)
+            val intent = Intent(applicationContext, mctestActivity::class.java)
             startActivity(intent)
             finish()
         }
