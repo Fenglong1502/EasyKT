@@ -8,5 +8,8 @@ class ActivityFLTest : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fltest)
+
+        setSupportActionBar(findViewById(R.id.my_toolbar))
+
     }
 }

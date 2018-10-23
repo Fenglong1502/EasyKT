@@ -16,15 +16,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setSupportActionBar(findViewById(R.id.my_toolbar))
+
         val quizCard = findViewById<CardView>(R.id.quizCard)
         quizCard.setOnClickListener {
-            val myIntent = Intent(this, ActivitQuiz::class.java)
+            val myIntent = Intent(this, ActivityFLTest::class.java)
             startActivity(myIntent)
         }
 
         val tutorialCard = findViewById<CardView>(R.id.tutorialCard)
         tutorialCard.setOnClickListener {
-            val myIntent = Intent(this, ActivityTutorial::class.java)
+            val myIntent = Intent(this, mctestActivity::class.java)
             startActivity(myIntent)
         }
 
