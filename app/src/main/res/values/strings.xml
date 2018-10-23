@@ -4,4 +4,8 @@
     <string name="quiz">Quiz</string>
     <string name="video">Video</string>
     <string name="tbc">TBC</string>
+    <string name="title_activity_fltest2">ActivityFLTest2</string>
+    <string name="title_Tutorial">Tutorial</string>
+    <string name="title_Quiz">Quiz</string>
+    <string name="title_Video">Video</string>
 </resources>

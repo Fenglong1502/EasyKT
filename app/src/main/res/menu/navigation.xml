@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_Tutorial"
+        android:icon="@drawable/menu_tutorial"
+        android:title="@string/tutorial" />
+
+    <item
+        android:id="@+id/navigation_Quiz"
+        android:icon="@drawable/menu_quiz"
+        android:title="@string/quiz" />
+
+    <item
+        android:id="@+id/navigation_Video"
+        android:icon="@drawable/menu_video"
+        android:title="@string/video" />
+
+</menu>
