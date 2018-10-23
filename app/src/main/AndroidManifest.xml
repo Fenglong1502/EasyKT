@@ -28,6 +28,9 @@
         <activity android:name=".ActivitQuiz" />
         <activity android:name=".ActivityVideo" />
         <activity android:name=".ActivityFLTest"></activity>
+        <activity
+            android:name=".ActivityFLTest2"
+            android:label="@string/title_activity_fltest2"></activity>
     </application>
 
 </manifest>
