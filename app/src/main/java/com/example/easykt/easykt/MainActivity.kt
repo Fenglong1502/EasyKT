@@ -16,10 +16,23 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val imgBtnTutorial = findViewById<ImageButton>(R.id.imgBtnTutorial)
-        imgBtnTutorial.setOnClickListener{
-            val intent = Intent(this, ActivityTutorial :: class.java)
-            startActivity(intent)
+        val quizCard = findViewById<CardView>(R.id.quizCard)
+        quizCard.setOnClickListener {
+            val myIntent = Intent(this, ActivitQuiz::class.java)
+            startActivity(myIntent)
+        }
+
+        val tutorialCard = findViewById<CardView>(R.id.tutorialCard)
+        tutorialCard.setOnClickListener {
+            val myIntent = Intent(this, ActivityTutorial::class.java)
+            startActivity(myIntent)
+        }
+
+        val videoCard = findViewById<CardView>(R.id.videoCard)
+        videoCard.setOnClickListener {
+            val myIntent = Intent(this, ActivityVideo::class.java)
+            startActivity(myIntent)
+
         }
     }
 }
