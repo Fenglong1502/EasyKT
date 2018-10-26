@@ -20,21 +20,23 @@ class MainActivity : AppCompatActivity() {
 
         val quizCard = findViewById<CardView>(R.id.quizCard)
         quizCard.setOnClickListener {
-            val myIntent = Intent(this, ActivityFLTest::class.java)
+            val myIntent = Intent(this, ActivityDisplay::class.java)
+            myIntent.putExtra("FragmentToPass", "quiz")
             startActivity(myIntent)
         }
 
         val tutorialCard = findViewById<CardView>(R.id.tutorialCard)
         tutorialCard.setOnClickListener {
-            val myIntent = Intent(this, mctestActivity::class.java)
+            val myIntent = Intent(this, ActivityDisplay::class.java)
+            myIntent.putExtra("FragmentToPass", "tutorial")
             startActivity(myIntent)
         }
 
         val videoCard = findViewById<CardView>(R.id.videoCard)
         videoCard.setOnClickListener {
-            val myIntent = Intent(this, ActivityVideo::class.java)
+            val myIntent = Intent(this, ActivityDisplay::class.java)
+            myIntent.putExtra("FragmentToPass", "video")
             startActivity(myIntent)
-
         }
     }
 }

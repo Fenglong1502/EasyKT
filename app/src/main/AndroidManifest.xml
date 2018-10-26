@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.easykt.easykt">
 
-
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/kt_icon"
@@ -27,10 +27,11 @@
         <activity android:name=".ActivityTutorial" />
         <activity android:name=".ActivitQuiz" />
         <activity android:name=".ActivityVideo" />
-        <activity android:name=".ActivityFLTest"></activity>
+        <activity android:name=".ActivityFLTest" />
         <activity
             android:name=".ActivityFLTest2"
-            android:label="@string/title_activity_fltest2"></activity>
+            android:label="@string/title_activity_fltest2" />
+        <activity android:name=".ActivityDisplay"></activity>
     </application>
 
 </manifest>
