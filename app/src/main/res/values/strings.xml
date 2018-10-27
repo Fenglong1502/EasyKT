@@ -9,6 +9,33 @@
     <string name="title_Quiz">Quiz</string>
     <string name="title_Video">Video</string>
 
+    <string-array name="level">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advance</item>
+    </string-array>
+
+
+    <string-array name="Beginner">
+        <item>Chapter 1</item>
+        <item>Chapter 2</item>
+        <item>Chapter 3</item>
+    </string-array>
+
+
+    <string-array name="Intermediate">
+        <item>Chapter 4</item>
+        <item>Chapter 5</item>
+        <item>Chapter 6</item>
+    </string-array>
+
+    <string-array name="Advance">
+        <item>Chapter 7</item>
+        <item>Chapter 8</item>
+        <item>Chapter 9</item>
+    </string-array>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

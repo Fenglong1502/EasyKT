@@ -19,7 +19,7 @@ class ActivityDisplay : AppCompatActivity() {
         when (item.itemId) {
             R.id.navigation_Tutorial -> {
                 transaction = fragmentManager.beginTransaction()
-                fragmentToGo = TutorialFragment()
+                fragmentToGo = TutorialListFragment()
                 transaction.replace(R.id.frameLayout,fragmentToGo)
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
@@ -50,7 +50,7 @@ class ActivityDisplay : AppCompatActivity() {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         fragmentManager= supportFragmentManager
         transaction = fragmentManager.beginTransaction()
-        fragmentToGo = TutorialFragment()
+        fragmentToGo = TutorialListFragment()
 
         var FragmentToPass : String = intent.getStringExtra("FragmentToPass")
 

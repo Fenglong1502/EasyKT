@@ -27,7 +27,7 @@ class ActivityFLTest : AppCompatActivity() {
 //                val newIntent = Intent(this, ActivityTutorial :: class.java)
 //                startActivity(newIntent)
                 transaction = fragmentManager.beginTransaction()
-                fragmentToGo = TutorialFragment()
+                fragmentToGo = TutorialListFragment()
                 transaction.replace(R.id.frameLayout,fragmentToGo)
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
@@ -36,7 +36,7 @@ class ActivityFLTest : AppCompatActivity() {
 //                val newIntent = Intent(this, ActivitQuiz :: class.java)
 //                startActivity(newIntent)
                 transaction = fragmentManager.beginTransaction()
-                fragmentToGo = TutorialFragment()
+                fragmentToGo = TutorialListFragment()
                 transaction.replace(R.id.frameLayout,fragmentToGo)
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
@@ -63,7 +63,7 @@ class ActivityFLTest : AppCompatActivity() {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         fragmentManager= supportFragmentManager
         transaction = fragmentManager.beginTransaction()
-        fragmentToGo = TutorialFragment()
+        fragmentToGo = TutorialListFragment()
         var FragmentToPass : String = intent.getStringExtra("FragmentToPass")
         var test = FragmentToPass == "video"
         if(test){
@@ -71,11 +71,11 @@ class ActivityFLTest : AppCompatActivity() {
         }
 
         if(FragmentToPass == "tutorial"){
-            fragmentToGo = TutorialFragment()
+            fragmentToGo = TutorialListFragment()
         }
 
         if(FragmentToPass == "quiz"){
-            fragmentToGo = TutorialFragment()
+            fragmentToGo = TutorialListFragment()
         }
 
         transaction.add(R.id.frameLayout,fragmentToGo)
