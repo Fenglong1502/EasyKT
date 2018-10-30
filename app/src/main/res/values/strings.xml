@@ -12,27 +12,38 @@
     <string-array name="level">
         <item>Beginner</item>
         <item>Intermediate</item>
-        <item>Advance</item>
+        <item>Advanced</item>
     </string-array>
 
 
     <string-array name="Beginner">
-        <item>Chapter 1</item>
-        <item>Chapter 2</item>
-        <item>Chapter 3</item>
+        <item>Basic Types</item> <!--http://kotlinlang.org/docs/reference/basic-types.html-->
+        <item>Control Flow</item> <!--http://kotlinlang.org/docs/reference/control-flow.html-->
+        <item>Returns and Jumps</item> <!--http://kotlinlang.org/docs/reference/returns.html-->
+        <item>Classes and Inheritance</item> <!--http://kotlinlang.org/docs/reference/classes.html-->
+        <item>Properties and Fields</item> <!--http://kotlinlang.org/docs/reference/properties.html-->
     </string-array>
 
 
     <string-array name="Intermediate">
-        <item>Chapter 4</item>
-        <item>Chapter 5</item>
-        <item>Chapter 6</item>
+        <item>Interfaces</item> <!--http://kotlinlang.org/docs/reference/interfaces.html-->
+        <item>Visibility Modifiers</item> <!--http://kotlinlang.org/docs/reference/visibility-modifiers.html-->
+        <item>Data Classes</item> <!--http://kotlinlang.org/docs/reference/data-classes.html-->
+        <item>Generics</item> <!--http://kotlinlang.org/docs/reference/generics.html-->
+        <item>Objects</item> <!--http://kotlinlang.org/docs/reference/object-declarations.html-->
+        <item>Functions</item> <!--http://kotlinlang.org/docs/reference/functions.html-->
+        <item>Lambdas</item> <!--http://kotlinlang.org/docs/reference/lambdas.html-->
+        <item>Collection</item> <!--http://kotlinlang.org/docs/reference/collections.html-->
+        <item>Exceptions</item> <!--http://kotlinlang.org/docs/reference/exceptions.html-->
     </string-array>
 
-    <string-array name="Advance">
-        <item>Chapter 7</item>
-        <item>Chapter 8</item>
-        <item>Chapter 9</item>
+    <string-array name="Advanced">
+        <item>Extensions</item> <!--http://kotlinlang.org/docs/reference/extensions.html-->
+        <item>Sealed Classes</item> <!--http://kotlinlang.org/docs/reference/sealed-classes.html-->
+        <item>Inline Classes</item> <!--http://kotlinlang.org/docs/reference/inline-classes.html-->
+        <item>Destructuring Declarations</item> <!--http://kotlinlang.org/docs/reference/multi-declarations.html-->
+        <item>Operator overloading</item> <!--http://kotlinlang.org/docs/reference/operator-overloading.html-->
+        <item>Type-Safe Builders</item> <!--http://kotlinlang.org/docs/reference/type-safe-builders.html-->
     </string-array>
 
 
