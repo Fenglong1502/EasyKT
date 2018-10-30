@@ -6,7 +6,7 @@ import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
-import kotlinx.android.synthetic.main.activity_fltest2.*
+import kotlinx.android.synthetic.main.activity_display.*
 
 class ActivityDisplay : AppCompatActivity() {
 
