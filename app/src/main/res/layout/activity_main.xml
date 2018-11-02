@@ -172,6 +172,7 @@
 
         <!--Column 2 !-->
         <android.support.v7.widget.CardView
+            android:id="@+id/noteCard"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
@@ -193,13 +194,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:src="@mipmap/kt_icon" />
+                    android:src="@mipmap/note" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/tbc"
+                    android:text="@string/note"
                     android:textAlignment="center"
                     android:textColor="@android:color/black"
                     android:textSize="18sp"

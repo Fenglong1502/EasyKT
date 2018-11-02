@@ -16,4 +16,9 @@
         android:icon="@drawable/menu_video"
         android:title="@string/video" />
 
+    <item
+        android:id="@+id/navigation_Note"
+        android:icon="@drawable/menu_note"
+        android:title="@string/note" />
+
 </menu>

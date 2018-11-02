@@ -43,6 +43,13 @@ class MainActivity : AppCompatActivity() {
             myIntent.putExtra("FragmentToPass", "video")
             startActivity(myIntent)
         }
+
+        val noteCard = findViewById<CardView>(R.id.noteCard)
+        noteCard.setOnClickListener {
+            val myIntent = Intent(this, ActivityDisplay::class.java)
+            myIntent.putExtra("FragmentToPass", "note")
+            startActivity(myIntent)
+        }
     }
 
     override fun onBackPressed() {

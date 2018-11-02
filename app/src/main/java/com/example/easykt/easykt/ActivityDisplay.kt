@@ -38,6 +38,13 @@ class ActivityDisplay : AppCompatActivity() {
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.navigation_Note -> {
+                transaction = fragmentManager.beginTransaction()
+                fragmentToGo = NoteFragment()
+                transaction.replace(R.id.frameLayout,fragmentToGo)
+                transaction.commit()
+                return@OnNavigationItemSelectedListener true
+            }
         }
         false
     }
@@ -66,7 +73,11 @@ class ActivityDisplay : AppCompatActivity() {
             navigation.setSelectedItemId(R.id.navigation_Video);
         }
 
-       // transaction.add(R.id.frameLayout,fragmentToGo)
+        if( FragmentToPass == "note"){
+            navigation.setSelectedItemId(R.id.navigation_Note);
+        }
+
+        // transaction.add(R.id.frameLayout,fragmentToGo)
       // transaction.commit()
 
     }
