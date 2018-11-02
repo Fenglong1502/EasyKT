@@ -40,7 +40,7 @@ class TutorialListFragment : Fragment() {
         // Inflate the layout for this fragment
 
         val view = inflater.inflate(R.layout.fragment_tutorial_list, container, false)
-        expListView = view.findViewById<ExpandableListView>(R.id.tutorialExtListView)
+        expListView = view.findViewById(R.id.tutorialExtListView) as ExpandableListView
 
         levelList = ArrayList()
         prepareListData()

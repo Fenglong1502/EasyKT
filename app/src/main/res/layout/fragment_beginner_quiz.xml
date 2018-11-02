@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BeginnerQuizFragment">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            app:title="@string/beginnerQuiz"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <TextView
+            android:id="@+id/tvQns"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/toolbar_font"
+            android:text="This is Actvity Quiz" />
+
+        <RadioGroup
+            android:id="@+id/rg_choice"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:outlineSpotShadowColor="@color/toolbar_font"
+            android:outlineAmbientShadowColor="@color/toolbar_font"
+            android:layout_weight="7">
+
+            <RadioButton
+                android:id="@+id/rb_choice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/toolbar_font"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_choice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/toolbar_font"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_choice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/toolbar_font"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/rb_choice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/toolbar_font"
+                android:textSize="18sp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_next_beginner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/toolbar_font"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

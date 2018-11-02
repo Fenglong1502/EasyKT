@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".QuizFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -11,14 +12,48 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
+
+        <Button
+            android:id="@+id/btnBeginnerQuiz"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:text="This is ActvitQuiz" />
+            android:layout_height="50dp"
+            android:layout_marginBottom="0.5dp"
+            android:textSize="16dp"
+            android:paddingLeft="@dimen/text_margin"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/toolbar_font"
+            android:text="@string/beginnerQuiz" />
+
+        <Button
+            android:id="@+id/btnIntermediateQuiz"
+            android:layout_width="match_parent"
+            android:foregroundGravity="left"
+            android:layout_height="50dp"
+            android:layout_marginBottom="0.5dp"
+            android:paddingLeft="@dimen/text_margin"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="left|center_vertical"
+            android:background="@color/toolbar_font"
+            android:text="@string/intermediateQuiz" />
+
+        <Button
+            android:id="@+id/btnAdvancedQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:paddingLeft="@dimen/text_margin"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/toolbar_font"
+            android:gravity="left|center_vertical"
+            android:text="@string/advancedQuiz"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp" />
 
     </LinearLayout>
+
+
 
 
 </FrameLayout>
