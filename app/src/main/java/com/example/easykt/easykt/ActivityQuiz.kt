@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
+import android.support.v7.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_display.*
 
 class ActivityQuiz : AppCompatActivity() {
@@ -43,5 +44,17 @@ class ActivityQuiz : AppCompatActivity() {
             transaction.replace(R.id.quizFrameLayout,fragmentToDisplay)
             transaction.commit()
         }
+    }
+
+    override fun onBackPressed() {
+        val dialog = AlertDialog.Builder(this)
+        dialog.setTitle("Are you sure !")
+        dialog.setMessage("Do you want to exit quiz? \nAll your current progress will be lost.")
+        dialog.setPositiveButton("Yes") { dialog, which ->
+            dialog?.dismiss()
+            super.onBackPressed()
+        }
+        dialog.setNegativeButton("No") { dialog, which -> dialog?.dismiss() }
+        dialog.show()
     }
 }

@@ -2,14 +2,20 @@ package com.example.easykt.easykt
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.BottomNavigationView
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentTransaction
+import kotlinx.android.synthetic.main.activity_display.*
 
 class ActivityTutorial : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tutorial)
 
-        var tutorialType : String = intent.getStringExtra("TutorialToGo")
+        var tutorialType: String = intent.getStringExtra("TutorialToGo")
 
         if (tutorialType == "Basic Types") {
             val fragmentManager = supportFragmentManager
@@ -170,6 +176,7 @@ class ActivityTutorial : AppCompatActivity() {
             transaction.add(R.id.tutFrameLayout, fragment1)
             transaction.commit()
         }
+
 
     }
 }

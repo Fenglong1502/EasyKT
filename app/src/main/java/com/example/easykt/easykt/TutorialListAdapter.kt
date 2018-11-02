@@ -84,7 +84,7 @@ class TutorialListAdapter : BaseExpandableListAdapter{
                     //Toast.makeText(context.context, "You Clicked : ${tv.text.toString()}", Toast.LENGTH_LONG).show()
                     var myIntent = Intent(context.context, ActivityTutorial::class.java)
                     myIntent.putExtra("TutorialToGo", tv.text.toString())
-                    context.startActivity(myIntent)
+                    context!!.activity!!.startActivity(myIntent)
                 }
         })
         return rv

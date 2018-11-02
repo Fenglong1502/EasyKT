@@ -32,7 +32,7 @@ class IntObjectsFragment : Fragment() {
         myWebView.settings.builtInZoomControls = true
 
 
-        myWebView.loadUrl("file:///android_asset/int_objectexpression.html")
+        myWebView.loadUrl("file:///android_asset/int_objectexpressions.html")
 
 
         return view

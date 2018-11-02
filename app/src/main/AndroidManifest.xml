@@ -26,6 +26,7 @@
         <activity android:name=".MainActivity" android:screenOrientation="portrait"  />
         <activity android:name=".ActivityDisplay" android:screenOrientation="portrait" />
         <activity android:name=".ActivityQuiz" android:screenOrientation="portrait" />
+        <activity android:name=".ActivityTutorial" android:screenOrientation="portrait" />
     </application>
 
 </manifest>

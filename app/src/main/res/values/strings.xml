@@ -9,9 +9,9 @@
     <string name="title_Quiz">Quiz</string>
     <string name="title_Video">Video</string>
 
-    <string name="beginnerQuiz">Quiz 1 - Beginner</string>
+    <string name="beginnerQuiz">Quiz 1 - Beginner Quiz</string>
     <string name="intermediateQuiz">Quiz 2 - Intermediate Quiz</string>
-    <string name="advancedQuiz">Quiz 3 - Advanced</string>
+    <string name="advancedQuiz">Quiz 3 - Advanced Quiz</string>
 
     <string-array name="level">
         <item>Beginner</item>

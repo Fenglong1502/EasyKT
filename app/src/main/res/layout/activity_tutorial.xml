@@ -13,6 +13,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:elevation="4dp"
+        app:title="@string/tutorial"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -22,6 +23,7 @@
         android:layout_weight="9"
         android:orientation="vertical">
 
+
         <FrameLayout
             android:id="@+id/tutFrameLayout"
             android:layout_width="match_parent"
@@ -30,21 +32,5 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:gravity="bottom">
-
-        <android.support.design.widget.BottomNavigationView
-            android:id="@+id/navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:background="@color/colorPrimary"
-            app:menu="@menu/navigation" />
-
-    </LinearLayout>
 
 </LinearLayout>

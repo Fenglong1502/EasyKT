@@ -29,21 +29,21 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:textSize="24sp"
             android:textColor="@color/toolbar_font"
-            android:text="This is Actvity Quiz" />
+            android:text="" />
 
         <RadioGroup
             android:id="@+id/rg_choice"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:outlineSpotShadowColor="@color/toolbar_font"
-            android:outlineAmbientShadowColor="@color/toolbar_font"
             android:layout_weight="7">
 
             <RadioButton
                 android:id="@+id/rb_choice1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:buttonTint="@color/toolbar_font"
                 android:textColor="@color/toolbar_font"
                 android:textSize="18sp" />
 
@@ -51,12 +51,14 @@
                 android:id="@+id/rb_choice2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:buttonTint="@color/toolbar_font"
                 android:textColor="@color/toolbar_font"
                 android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rb_choice3"
                 android:layout_width="wrap_content"
+                android:buttonTint="@color/toolbar_font"
                 android:layout_height="wrap_content"
                 android:textColor="@color/toolbar_font"
                 android:textSize="18sp" />
@@ -64,6 +66,7 @@
             <RadioButton
                 android:id="@+id/rb_choice4"
                 android:layout_width="wrap_content"
+                android:buttonTint="@color/toolbar_font"
                 android:layout_height="wrap_content"
                 android:textColor="@color/toolbar_font"
                 android:textSize="18sp" />

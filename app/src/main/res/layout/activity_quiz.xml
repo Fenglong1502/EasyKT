@@ -8,8 +8,6 @@
     android:background="@drawable/quiz_background"
     android:orientation="vertical">
 
-
-
     <FrameLayout
         android:id="@+id/quizFrameLayout"
         android:layout_width="match_parent"
