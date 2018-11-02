@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content='width=device-width, initial-scale=1.0,text/html,charset=utf-8' >
+<head>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body style="font-family:sans-serif;line-height:24px">
+    <div class="container">
+        
+       
+
+            <h1 id="data-classes">Data Classes</h1>
+            <p>
+                We frequently create a class to do nothing but hold data. In such a class some standard functionality is often mechanically
+                derivable from the data. In Kotlin, this is called a <em>data class</em> and is marked as <code>data</code>:
+            </p>
+<pre><code class="code _highlighted cm-s-default" data-lang="text/x-kotlin"><span class="cm-keyword">data</span> <span class="cm-keyword">class</span> <span class="cm-def">User</span>(<span class="cm-keyword">val</span> <span class="cm-def">name</span>: <span class="cm-variable-3">String</span>, <span class="cm-keyword">val</span> <span class="cm-def">age</span>: <span class="cm-variable">Int</span>)
+</code></pre>
+            <p>The compiler automatically derives the following members from all properties declared in the primary constructor:</p>
+            <ul>
+                <li><code>equals()</code>/<code>hashCode()</code> pair,</li>
+                <li><code>toString()</code> of the form <code>"User(name=John, age=42)"</code>,</li>
+                <li><code>componentN()</code> functions corresponding to the properties in their order of declaration,</li>
+                <li><code>copy()</code> function (see below).</li>
+            </ul>
+            <p>If any of these functions is explicitly defined in the class body or inherited from the base types, it will not be generated.</p>
+            <p>To ensure consistency and meaningful behavior of the generated code, data classes have to fulfil the following requirements:</p>
+            <ul>
+                <li>The primary constructor needs to have at least one parameter;</li>
+                <li>All primary constructor parameters need to be marked as <code>val</code> or <code>var</code>;</li>
+                <li>Data classes cannot be abstract, open, sealed or inner;</li>
+                <li>(before 1.1) Data classes may only implement interfaces.</li>
+            </ul>
+          
+            <p>
+                On the JVM, if the generated class needs to have a parameterless constructor, default values for all properties have to be specified.
+               
+            </p>
+<pre><code class="code _highlighted cm-s-default" data-lang="text/x-kotlin"><span class="cm-keyword">data</span> <span class="cm-keyword">class</span> <span class="cm-def">User</span>(<span class="cm-keyword">val</span> <span class="cm-def">name</span>: <span class="cm-variable-3">String</span> <span class="cm-operator">=</span> <span class="cm-string">""</span>, <span class="cm-keyword">val</span> <span class="cm-def">age</span>: <span class="cm-variable">Int</span> <span class="cm-operator">=</span> <span class="cm-number">0</span>)
+</code></pre>
+            <h2 id="copying">Copying</h2>
+            <p>
+                It's often the case that we need to copy an object altering <em>some</em> of its properties, but keeping the rest unchanged.
+                This is what <code>copy()</code> function is generated for. For the <code>User</code> class above, its implementation would be as follows:
+            </p>
+<pre><code class="code _highlighted cm-s-default" data-lang="text/x-kotlin"><span class="cm-keyword">fun</span> <span class="cm-def">copy</span>(<span class="cm-variable">name</span>: <span class="cm-variable-3">String</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-variable">name</span>, <span class="cm-variable">age</span>: <span class="cm-variable">Int</span> <span class="cm-operator">=</span> <span class="cm-keyword">this</span>.<span class="cm-variable">age</span>) <span class="cm-operator">=</span> <span class="cm-variable">User</span>(<span class="cm-variable">name</span>, <span class="cm-variable">age</span>)     
+</code></pre>
+            <p>This allows us to write</p>
+<pre><code class="code _highlighted cm-s-default" data-lang="text/x-kotlin"><span class="cm-keyword">val</span> <span class="cm-def">jack</span> <span class="cm-operator">=</span> <span class="cm-variable">User</span>(<span class="cm-variable">name</span> <span class="cm-operator">=</span> <span class="cm-string">"Jack"</span>, <span class="cm-variable">age</span> <span class="cm-operator">=</span> <span class="cm-number">1</span>)
+<span class="cm-keyword">val</span> <span class="cm-def">olderJack</span> <span class="cm-operator">=</span> <span class="cm-variable">jack</span>.<span class="cm-variable">copy</span>(<span class="cm-variable">age</span> <span class="cm-operator">=</span> <span class="cm-number">2</span>)
+</code></pre>
+            <h2 id="data-classes-and-destructuring-declarations">Data Classes and Destructuring Declarations</h2>
+            <p><em>Component functions</em> generated for data classes enable their use in destructuring declarations:</p>
+<pre><code class="code _highlighted cm-s-default" data-lang="text/x-kotlin"><span class="cm-keyword">val</span> <span class="cm-def">jane</span> <span class="cm-operator">=</span> <span class="cm-variable">User</span>(<span class="cm-string">"Jane"</span>, <span class="cm-number">35</span>) 
+<span class="cm-keyword">val</span> (<span class="cm-variable">name</span>, <span class="cm-variable">age</span>) <span class="cm-operator">=</span> <span class="cm-variable">jane</span>
+<span class="cm-variable">println</span>(<span class="cm-string">"$name, $age years of age"</span>) <span class="cm-comment">// prints "Jane, 35 years of age"</span>
+</code></pre>
+            <h2 id="standard-data-classes">Standard Data Classes</h2>
+            <p>
+                The standard library provides <code>Pair</code> and <code>Triple</code>. In most cases, though, named data classes are a better design choice,
+                because they make the code more readable by providing meaningful names for properties.
+            </p>
+
+        
+    
+    
+    
+    
+    
+    
+    
+    </div>
+</body>
+</html>

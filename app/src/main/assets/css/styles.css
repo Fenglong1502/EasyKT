@@ -1,0 +1,53 @@
+﻿.cm-keyword {
+    color:#0037b3;
+   
+}
+
+h1{
+font-size:1.2em;
+}
+
+h2{
+font-size:1.1em;
+}
+
+pre{
+    border:none !important;
+    font-size:14px;
+}
+
+.cm-comment{
+    color:gray;
+}
+.data-types
+{
+    background-color:#efefef;
+    color:black;
+}
+
+.cm-string{
+    color:#009c00;
+}
+.cm-number
+{
+    color:#00f;
+}
+.keyword {
+color:#0037b3;
+}
+p code{
+    background-color:#efefef;
+    color:black;
+}
+ul li code{
+    background-color:#efefef;
+    color:black;
+}
+.cm-string2{
+    color:#a11;
+}
+.result{
+    background-color:yellow;
+    margin-left:5px;
+    color:blue;
+}

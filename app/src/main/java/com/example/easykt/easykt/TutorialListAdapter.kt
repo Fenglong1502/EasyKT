@@ -2,11 +2,13 @@ package com.example.easykt.easykt
 
 import android.content.Context
 import android.content.Context.LAYOUT_INFLATER_SERVICE
+import android.content.Intent
 import android.text.Layout
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.support.v4.app.Fragment
+import android.support.v4.content.ContextCompat.startActivity
 import android.widget.BaseExpandableListAdapter
 import android.widget.TextView
 import android.widget.Toast
@@ -79,7 +81,10 @@ class TutorialListAdapter : BaseExpandableListAdapter{
         tv.setText(l.getName().trim())
         tv.setOnClickListener(object: View.OnClickListener{
                 override fun onClick(v: View?){
-                    Toast.makeText(context.context, "You Clicked : ${tv.text.toString()}", Toast.LENGTH_LONG).show()
+                    //Toast.makeText(context.context, "You Clicked : ${tv.text.toString()}", Toast.LENGTH_LONG).show()
+                    var myIntent = Intent(context.context, ActivityTutorial::class.java)
+                    myIntent.putExtra("TutorialToGo", tv.text.toString())
+                    context.startActivity(myIntent)
                 }
         })
         return rv
