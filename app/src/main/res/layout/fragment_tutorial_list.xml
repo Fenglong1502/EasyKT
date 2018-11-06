@@ -17,9 +17,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:groupIndicator="@null"
+            android:clipChildren="true"
             android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
 
-            android:layout_marginTop="5px"
+            android:layout_marginTop="10px"
             android:drawSelectorOnTop="true"
             android:dividerHeight="0.5dp"/>
 
