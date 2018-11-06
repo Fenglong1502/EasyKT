@@ -18,7 +18,8 @@
             android:layout_height="match_parent"
             android:groupIndicator="@null"
             android:indicatorLeft="?android:attr/expandableListPreferredChildIndicatorLeft"
-            android:divider="@drawable/activity_wallpaper"
+
+            android:layout_marginTop="5px"
             android:drawSelectorOnTop="true"
             android:dividerHeight="0.5dp"/>
 
